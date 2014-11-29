@@ -1,0 +1,94 @@
+--- !ruby/object:Library
+books:
+- &5 !ruby/object:Book
+  title: "Солярис"
+  author: !ruby/object:Author
+    name: "Станислав Лем"
+- !ruby/object:Book
+  title: "Пикник на обочине"
+  author: !ruby/object:Author
+    name: "Аркадий и Борис Стругацкие"
+- !ruby/object:Book
+  title: "Человек-амфибия"
+  author: !ruby/object:Author
+    name: "Александр Беляев"
+- &3 !ruby/object:Book
+  title: "Война миров"
+  author: !ruby/object:Author
+    name: "Герберт Уэллс"
+- !ruby/object:Book
+  title: "Ночной дозор"
+  author: !ruby/object:Author
+    name: "Лукьяненко"
+- &1 !ruby/object:Book
+  title: "Колобок"
+  author: !ruby/object:Author
+    name: "Народная"
+readers:
+- &2 !ruby/object:Reader
+  house: 2
+  street: K.Marksa
+  city: Dnepropetrovsk
+  email: vasya@gmail.com
+  name: "Василий"
+- &6 !ruby/object:Reader
+  house: 1
+  street: test
+  city: test
+  email: test@gmail.com
+  name: test
+- &4 !ruby/object:Reader
+  house: 2
+  street: test2
+  city: test2
+  email: test2@gmail.com
+  name: test2
+- &7 !ruby/object:Reader
+  house: 3
+  street: test3
+  city: test3
+  email: test3@gmail.com
+  name: test3
+orders:
+- !ruby/object:Order
+  book:
+  - *1
+  reader:
+  - *2
+  date: 2014-11-29 17:09:01.561552000 +02:00
+- !ruby/object:Order
+  book:
+  - *3
+  reader:
+  - *4
+  date: 2014-11-29 17:09:01.561556000 +02:00
+- !ruby/object:Order
+  book:
+  - *5
+  reader:
+  - *6
+  date: 2014-11-29 17:09:01.561559000 +02:00
+- !ruby/object:Order
+  book:
+  - *1
+  reader:
+  - *4
+  date: 2014-11-29 17:09:01.561562000 +02:00
+- !ruby/object:Order
+  book:
+  - *5
+  reader:
+  - *4
+  date: 2014-11-29 17:09:01.561565000 +02:00
+- !ruby/object:Order
+  book:
+  - *5
+  reader:
+  - *7
+  date: 2014-11-29 17:09:01.561568000 +02:00
+- !ruby/object:Order
+  book:
+  - *3
+  reader:
+  - *7
+  date: 2014-11-29 17:09:01.561571000 +02:00
